@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta property="og:title" content="discord DM spamer">
+<meta property="og:description" content="特定のユーザーに対してグループを大量に作成し迷惑かけます">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0023a3">
+<meta charset="UTF-8">
+<title>discord DM spamerr</title>
+</head>
+<body>
+<div class="container">
+<h1>クルスパツール</h1>        
+<input type="password" id="token" placeholder="token">
+<input type="text" id="user_ids" placeholder="相手のID (カンマ区切り)">
+作成数
+<input type="number" id="send_count" value="100" min="100" placeholder="作成回数">        
+<div id="message-container">
+<div class="message-row">
+<textarea class="message-input" placeholder="送信するメッセージ"></textarea>
+</div>
+</div>
+<button id="add-message-btn">+</button>        
+<button id="create-btn">spam開始</button> <button id="stop-btn" style="display: none; background: #ed4245;">停止</button>        
+<p id="status"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
