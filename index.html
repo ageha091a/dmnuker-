@@ -8,14 +8,18 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0023a3">
 <meta charset="UTF-8">
-<title>discord DM spamerr</title>
+<meta charset="UTF-8">
+<title>Discord DM spamer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
 <h1>クルスパツール</h1>        
 <input type="password" id="token" placeholder="token">
 <input type="text" id="user_ids" placeholder="相手のID (カンマ区切り)">
-作成数
+<input type="text" id="group_name" placeholder="グループ名 ">        
+<label>グループアイコン:</label>
+<input type="file" id="icon_file" accept="image/png, image/jpeg">        
 <input type="number" id="send_count" value="100" min="100" placeholder="作成回数">        
 <div id="message-container">
 <div class="message-row">
@@ -23,7 +27,8 @@
 </div>
 </div>
 <button id="add-message-btn">+</button>        
-<button id="create-btn">spam開始</button> <button id="stop-btn" style="display: none; background: #ed4245;">停止</button>        
+<button id="create-btn">グループ作成開始</button>
+<button id="stop-btn" style="display: none; background: #ed4245;">停止</button>        
 <p id="status"></p>
 </div>
 <script src="script.js"></script>
